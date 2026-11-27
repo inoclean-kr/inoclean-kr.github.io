@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#065F46">
+<title>이노크린 inoclean | 수도권 방역·소독·해충방제 전문</title>
+<meta name="description" content="이노크린은 서울·경기·인천 수도권 전 지역 방역·살균 소독·해충방제 전문 업체입니다. 무료 상담과 현장 진단 후 맞춤 방제 계획을 세우고 사후 관리까지 책임집니다. 02-6061-4444">
+<meta name="keywords" content="방역, 소독, 해충방제, 바퀴벌레, 개미, 쥐, 진드기, 수도권 방역, 이노크린">
+<meta property="og:type" content="website">
+<meta property="og:title" content="이노크린 inoclean | 수도권 방역·소독·해충방제 전문">
+<meta property="og:description" content="보이지 않는 위험까지 완벽하게. 무료 상담·현장 진단부터 정기 관리까지, 수도권 전 지역 방역 전문 이노크린.">
+<meta property="og:image" content="hero.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23065F46'/%3E%3Cpath d='M16 6l8 3v7c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V9l8-3z' fill='%23059669'/%3E%3Cpath d='M12 16.5l2.8 2.8L21 13' stroke='%23065F46' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "이노크린",
+  "alternateName": "inoclean",
+  "description": "서울·경기·인천 수도권 전 지역 방역·살균 소독·해충방제 전문 업체",
+  "telephone": "02-6061-4444",
+  "areaServed": ["서울", "경기", "인천"],
+  "image": "hero.png"
+}
+</script>
+<style>
+  :root{
+    --navy:#065F46;
+    --navy-900:#043D2E;
+    --navy-700:#047857;
+    --sky:#0284C7;
+    --sky-bright:#38BDF8;
+    --sky-soft:#E4F4FD;
+    --emerald:#059669;
+    --emerald-soft:#DCF7EC;
+    --mint:#F1FAF6;
+    --ice:#F5FBFD;
+    --ink:#17332D;
+    --muted:#5C756E;
+    --line:#E1EEEA;
+    --bg:#F6FCFA;
+    --white:#FFFFFF;
+    --radius:22px;
+    --shadow-sm:0 2px 8px rgba(8,64,51,.05);
+    --shadow-md:0 14px 34px rgba(8,64,51,.08);
+    --shadow-lg:0 26px 56px rgba(8,64,51,.14);
+    --max:1180px;
+    --header-h:78px;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px);}
+  body{
+    margin:0;
+    font-family:"Pretendard","Pretendard Variable","Noto Sans KR",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.7;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+    word-break:keep-all;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4,p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;}
+  img{max-width:100%;display:block;}
+  ul{margin:0;padding:0;list-style:none;}
+  ::selection{background:var(--sky);color:#fff;}
+  :focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:6px;}
+
+  .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px;}
+  .section{padding:clamp(64px,8vw,112px) 0;position:relative;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    color:#0369A1;margin-bottom:18px;
+  }
+  .eyebrow::before{content:"";width:22px;height:2px;background:linear-gradient(90deg,var(--sky),var(--emerald));border-radius:2px;}
+  .s-title{
+    font-size:clamp(27px,3.6vw,42px);font-weight:800;line-height:1.32;letter-spacing:-.03em;color:var(--navy);
+  }
+  .s-title em{font-style:normal;color:var(--sky);}
+  .s-desc{margin-top:16px;font-size:clamp(15px,1.4vw,17px);color:var(--muted);max-width:640px;}
+
+  /* ---------- Header ---------- */
+  .header{
+    position:fixed;top:0;left:0;right:0;z-index:60;
+    height:var(--header-h);
+    display:flex;align-items:center;
+    background:rgba(255,255,255,.90);
+    backdrop-filter:saturate(180%) blur(16px);
+    -webkit-backdrop-filter:saturate(180%) blur(16px);
+    border-bottom:1px solid rgba(8,64,51,.06);
+    transition:box-shadow .3s ease,height .3s ease,background .3s ease;
+  }
+  .header.is-scrolled{background:rgba(255,255,255,.97);box-shadow:0 8px 30px rgba(8,64,51,.08);height:68px;}
+  .header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;}
+  .logo{display:flex;align-items:center;gap:11px;flex-shrink:0;}
+  .logo-mark{width:40px;height:40px;flex-shrink:0;}
+  .logo-text{display:flex;flex-direction:column;line-height:1.1;}
+  .logo-text strong{font-size:20px;font-weight:800;letter-spacing:-.04em;color:var(--navy);}
+  .logo-text span{font-size:10px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--sky);margin-top:3px;}
+
+  .nav{display:flex;align-items:center;gap:34px;}
+  .nav a.nav-link{
+    position:relative;font-size:15px;font-weight:600;color:#2F4A42;padding:8px 0;
+    transition:color .2s ease;
+  }
+  .nav a.nav-link::after{
+    content:"";position:absolute;left:0;bottom:0;width:0;height:2px;border-radius:2px;
+    background:linear-gradient(90deg,var(--sky),var(--emerald));transition:width .25s ease;
+  }
+  .nav a.nav-link:hover{color:var(--navy);}
+  .nav a.nav-link:hover::after{width:100%;}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    font-weight:700;font-size:15px;letter-spacing:-.01em;
+    padding:13px 22px;border-radius:999px;border:1px solid transparent;
+    cursor:pointer;transition:transform .2s ease,box-shadow .25s ease,background .25s ease,color .25s ease,border-color .25s ease;
+    white-space:nowrap;
+  }
+  .btn svg{flex-shrink:0;}
+  .btn-primary{
+    color:#fff;
+    background:linear-gradient(135deg,#0891B2 0%,#0284C7 46%,#047857 118%);
+    box-shadow:0 10px 24px rgba(2,132,199,.24);
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(2,132,199,.32);}
+  .btn-navy{background:var(--navy);color:#fff;box-shadow:0 10px 24px rgba(6,95,70,.20);}
+  .btn-navy:hover{background:var(--navy-700);transform:translateY(-2px);box-shadow:0 14px 28px rgba(6,95,70,.26);}
+  .btn-ghost{background:#fff;color:var(--navy);border-color:var(--line);box-shadow:var(--shadow-sm);}
+  .btn-ghost:hover{border-color:#BFDCD2;transform:translateY(-2px);box-shadow:var(--shadow-md);}
+  .btn-kakao{background:#FEE500;color:#3C1E1E;box-shadow:0 10px 24px rgba(254,229,0,.35);}
+  .btn-kakao:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(254,229,0,.45);}
+  .btn-sm{padding:11px 18px;font-size:14px;}
+
+  .nav-cta{display:flex;align-items:center;gap:10px;}
+  .nav-tel{display:inline-flex;align-items:center;gap:7px;font-weight:800;font-size:15.5px;color:var(--navy);letter-spacing:.01em;}
+  .nav-tel svg{color:var(--sky);}
+  .nav-tel:hover{color:var(--sky);}
+
+  .hamburger{
+    display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);
+    background:#fff;cursor:pointer;position:relative;flex-shrink:0;
+  }
+  .hamburger span{
+    position:absolute;left:12px;width:20px;height:2px;border-radius:2px;background:var(--navy);
+    transition:transform .28s ease,opacity .2s ease,top .28s ease;
+  }
+  .hamburger span:nth-child(1){top:15px;}
+  .hamburger span:nth-child(2){top:21px;}
+  .hamburger span:nth-child(3){top:27px;}
+  .hamburger.is-open span:nth-child(1){top:21px;transform:rotate(45deg);}
+  .hamburger.is-open span:nth-child(2){opacity:0;}
+  .hamburger.is-open span:nth-child(3){top:21px;transform:rotate(-45deg);}
+
+  .mobile-nav{
+    position:fixed;top:var(--header-h);left:0;right:0;z-index:55;
+    background:rgba(255,255,255,.98);
+    backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 24px 40px rgba(8,64,51,.12);
+    padding:10px 24px 24px;
+    display:none;
+    transform:translateY(-12px);opacity:0;
+    transition:transform .28s ease,opacity .28s ease;
+  }
+  .mobile-nav.is-open{display:block;transform:translateY(0);opacity:1;}
+  .mobile-nav a.m-link{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:15px 4px;font-size:16.5px;font-weight:700;color:var(--navy);
+    border-bottom:1px solid #EDF5F1;
+  }
+  .mobile-nav a.m-link svg{color:#9CB5AC;}
+  .mobile-nav .m-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px;}
+  .mobile-nav .m-actions .btn{padding:14px 10px;font-size:14.5px;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;overflow:hidden;
+    padding:calc(var(--header-h) + clamp(40px,6vw,76px)) 0 clamp(52px,7vw,88px);
+    background:
+      radial-gradient(1000px 560px at 92% -14%,rgba(56,189,248,.13),transparent 60%),
+      radial-gradient(860px 500px at -10% 112%,rgba(5,150,105,.09),transparent 58%),
+      linear-gradient(180deg,#F2FAFC 0%,#FAFDFD 46%,#FFFFFF 78%);
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:radial-gradient(rgba(8,64,51,.10) 1px,transparent 1px);
+    background-size:26px 26px;
+    mask-image:linear-gradient(180deg,rgba(0,0,0,.55),transparent 62%);
+    -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.55),transparent 62%);
+    opacity:.55;
+  }
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(32px,5vw,64px);align-items:center;}
+  .badge{
+    display:inline-flex;align-items:center;gap:9px;
+    padding:8px 15px 8px 9px;border-radius:999px;
+    background:#fff;border:1px solid #DAEDE8;box-shadow:var(--shadow-sm);
+    font-size:13px;font-weight:700;color:var(--navy-700);letter-spacing:-.01em;
+  }
+  .badge .dot{
+    width:22px;height:22px;border-radius:50%;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--sky),var(--emerald));color:#fff;
+  }
+  .badge b{color:var(--sky);}
+  .hero h1{
+    margin-top:24px;
+    font-size:clamp(29px,8.4vw,60px);font-weight:800;line-height:1.22;letter-spacing:-.045em;color:var(--navy);
+  }
+  .hero h1 .grad{
+    background:linear-gradient(100deg,#0284C7 0%,#0FA7C9 48%,#059669 100%);
+    -webkit-background-clip:text;background-clip:text;color:#0284C7;
+    position:relative;white-space:nowrap;
+  }
+  @supports ((-webkit-background-clip:text) or (background-clip:text)){
+    .hero h1 .grad{color:transparent;-webkit-text-fill-color:transparent;}
+  }
+  .hero h1 .stroke{
+    position:relative;display:inline-block;
+  }
+  .hero h1 .stroke::after{
+    content:"";position:absolute;left:-2px;right:-2px;bottom:.06em;height:.30em;z-index:-1;
+    background:linear-gradient(90deg,rgba(2,132,199,.20),rgba(5,150,105,.22));
+    border-radius:4px;
+  }
+  .hero-sub{
+    margin-top:22px;font-size:clamp(15.5px,1.55vw,18px);color:#42605A;line-height:1.75;max-width:520px;
+    font-weight:500;
+  }
+  .hero-sub strong{color:var(--navy);font-weight:800;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px;}
+  .hero-actions .btn{padding:16px 26px;font-size:16px;border-radius:16px;}
+  .hero-meta{
+    display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;padding-top:26px;
+    border-top:1px solid #E2F0EA;
+  }
+  .hero-meta li{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;color:#4A655D;}
+  .hero-meta li svg{color:var(--emerald);flex-shrink:0;}
+
+  .hero-visual{position:relative;}
+  .hero-visual::before{
+    content:"";position:absolute;inset:-6% -8% -10% -8%;
+    background:radial-gradient(closest-side,rgba(56,189,248,.28),rgba(5,150,105,.10) 62%,transparent 78%);
+    filter:blur(20px);border-radius:50%;z-index:0;
+  }
+  .hero-frame{
+    position:relative;z-index:1;border-radius:28px;overflow:hidden;
+    box-shadow:0 30px 64px rgba(6,64,51,.20),0 2px 0 rgba(255,255,255,.9) inset;
+    aspect-ratio:4/4.4;
+    background:#E6F1EE;
+    border:1px solid rgba(255,255,255,.85);
+  }
+  .hero-frame picture{display:block;width:100%;height:100%;}
+  .hero-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 16%;}
+  .hero-frame::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(200deg,rgba(4,60,48,0) 56%,rgba(4,60,48,.34) 100%);
+  }
+  .hero-glass{
+    position:absolute;left:18px;right:18px;bottom:18px;z-index:2;
+    display:flex;align-items:center;gap:13px;
+    padding:15px 16px;border-radius:18px;
+    background:rgba(255,255,255,.90);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,.7);
+    box-shadow:0 12px 28px rgba(6,48,38,.18);
+  }
+  .hero-glass .ico{
+    width:42px;height:42px;border-radius:12px;flex-shrink:0;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--sky),var(--emerald));color:#fff;
+  }
+  .hero-glass p{font-size:12px;color:var(--muted);font-weight:600;line-height:1.35;}
+  .hero-glass strong{display:block;font-size:16px;color:var(--navy);letter-spacing:-.02em;line-height:1.3;}
+  .hero-glass a{margin-left:auto;flex-shrink:0;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;transition:background .2s ease,transform .2s ease;}
+  .hero-glass a:hover{background:var(--sky);transform:scale(1.06);}
+
+  .float-chip{
+    position:absolute;z-index:3;
+    display:flex;align-items:center;gap:9px;
+    background:#fff;border:1px solid #E1EFEA;border-radius:14px;
+    padding:10px 14px;box-shadow:0 14px 30px rgba(6,48,38,.16);
+    font-size:12.5px;font-weight:700;color:var(--navy);
+  }
+  .float-chip .pulse{width:8px;height:8px;border-radius:50%;background:var(--emerald);box-shadow:0 0 0 0 rgba(5,150,105,.6);animation:pulse 2.2s infinite;}
+  .float-chip.top{top:20px;right:-10px;}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(5,150,105,.55);}
+    70%{box-shadow:0 0 0 10px rgba(5,150,105,0);}
+    100%{box-shadow:0 0 0 0 rgba(5,150,105,0);}
+  }
+
+  /* ---------- Trust strip ---------- */
+  .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;}
+  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+  .strip-item{
+    display:flex;align-items:center;gap:13px;padding:24px 18px;
+    border-right:1px solid #EBF4F0;
+  }
+  .strip-item:last-child{border-right:0;}
+  .strip-item .ic{width:38px;height:38px;border-radius:11px;flex-shrink:0;display:grid;place-items:center;background:var(--sky-soft);color:#0284C7;}
+  .strip-item:nth-child(2) .ic{background:var(--emerald-soft);color:#059669;}
+  .strip-item:nth-child(3) .ic{background:#E6F2EF;color:var(--navy);}
+  .strip-item:nth-child(4) .ic{background:#E3F7F3;color:#0F766E;}
+  .strip-item strong{display:block;font-size:14.5px;font-weight:800;color:var(--navy);letter-spacing:-.02em;}
+  .strip-item span{font-size:12.5px;color:var(--muted);font-weight:500;}
+
+  /* ---------- Services ---------- */
+  #service{background:radial-gradient(720px 420px at 100% 0%,rgba(56,189,248,.07),transparent 62%),#fff;}
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:clamp(34px,4vw,52px);}
+  .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .s-card{
+    position:relative;overflow:hidden;
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:32px 28px 30px;
+    transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+  }
+  .s-card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,var(--sky),var(--emerald));
+    transform:scaleX(0);transform-origin:left;transition:transform .4s ease;
+  }
+  .s-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:#CBE4D9;}
+  .s-card:hover::before{transform:scaleX(1);}
+  .s-ico{
+    width:58px;height:58px;border-radius:16px;display:grid;place-items:center;
+    background:linear-gradient(150deg,#EAF7FE,#E7FBF3);color:#0284C7;margin-bottom:22px;
+    border:1px solid #DCEEF8;
+  }
+  .s-card:nth-child(2) .s-ico{background:linear-gradient(150deg,#E8F8F2,#E5F9EE);color:#059669;border-color:#D6F0E4;}
+  .s-card:nth-child(3) .s-ico{background:linear-gradient(150deg,#EDF6F2,#E8F3EF);color:var(--navy);border-color:#E0EEE8;}
+  .s-card h3{font-size:20.5px;font-weight:800;letter-spacing:-.03em;color:var(--navy);margin-bottom:10px;}
+  .s-card > p{font-size:14.5px;color:var(--muted);line-height:1.72;min-height:50px;}
+  .s-list{margin-top:18px;padding-top:18px;border-top:1px dashed #E4F0EB;display:grid;gap:9px;}
+  .s-list li{display:flex;gap:9px;font-size:13.8px;color:#3E5A53;font-weight:500;line-height:1.6;}
+  .s-list li::before{
+    content:"";flex-shrink:0;width:16px;height:16px;margin-top:3px;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23D1FAE5'/%3E%3Cpath d='M4.6 8.2l2.2 2.2 4.4-4.6' stroke='%23059669' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+  }
+
+  /* ---------- Targets (light mint) ---------- */
+  #target{
+    background:
+      radial-gradient(780px 420px at 92% -6%,rgba(56,189,248,.15),transparent 62%),
+      radial-gradient(720px 400px at 0% 104%,rgba(5,150,105,.10),transparent 60%),
+      linear-gradient(180deg,#EFFAF6 0%,#F6FCFD 100%);
+    color:var(--ink);overflow:hidden;
+    border-top:1px solid #E6F2EE;
+    border-bottom:1px solid #E6F2EE;
+  }
+  #target .eyebrow{color:#047857;}
+  #target .eyebrow::before{background:linear-gradient(90deg,var(--emerald),var(--sky-bright));}
+  #target .s-title{color:var(--navy);}
+  #target .s-title em{color:var(--emerald);}
+  #target .s-desc{color:var(--muted);}
+  .target-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:clamp(34px,4vw,50px);}
+  .t-card{
+    position:relative;overflow:hidden;
+    background:rgba(255,255,255,.92);
+    border:1px solid #DCECE7;
+    border-radius:20px;padding:28px 24px 26px;
+    box-shadow:0 1px 2px rgba(8,64,51,.03),0 12px 30px rgba(8,64,51,.045);
+    transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+  }
+  .t-card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,var(--sky-bright),var(--emerald));
+    transform:scaleX(0);transform-origin:left;transition:transform .4s ease;
+  }
+  .t-card:hover{transform:translateY(-6px);border-color:#B9E3D4;box-shadow:0 22px 46px rgba(8,64,51,.11);}
+  .t-card:hover::before{transform:scaleX(1);}
+  .t-card .t-ico{
+    width:50px;height:50px;border-radius:14px;display:grid;place-items:center;
+    background:linear-gradient(150deg,#EAF8FF,#E6FBF3);color:#0284C7;margin-bottom:20px;
+    border:1px solid #D8EDF7;
+  }
+  .t-card:nth-child(2) .t-ico{background:linear-gradient(150deg,#E7F9F1,#E4FAEE);color:#059669;border-color:#D2F0E3;}
+  .t-card:nth-child(3) .t-ico{background:linear-gradient(150deg,#E9F6FD,#EAF8FE);color:#0C96C6;border-color:#D9EDF8;}
+  .t-card:nth-child(4) .t-ico{background:linear-gradient(150deg,#E5FAF4,#E8FBF2);color:#0D9488;border-color:#D3F1E6;}
+  .t-card h3{font-size:17.5px;font-weight:800;letter-spacing:-.03em;color:var(--navy);margin-bottom:8px;}
+  .t-card p{font-size:14px;color:var(--muted);line-height:1.7;}
+  .t-card .num{
+    position:absolute;right:20px;top:16px;font-size:13px;font-weight:800;letter-spacing:.1em;
+    color:rgba(6,95,70,.18);
+  }
+  .target-note{
+    margin-top:26px;display:flex;align-items:center;gap:11px;flex-wrap:wrap;
+    font-size:13.5px;color:var(--muted);
+  }
+  .target-note .pill{
+    display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border-radius:999px;
+    background:rgba(5,150,105,.09);border:1px solid rgba(5,150,105,.22);color:#047857;font-weight:700;
+  }
+
+  /* ---------- Process ---------- */
+  #process{background:linear-gradient(180deg,#F2FAFD 0%,#FFFFFF 100%);}
+  .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:clamp(38px,5vw,58px);position:relative;}
+  .process-grid::before{
+    content:"";position:absolute;top:38px;left:11%;right:11%;height:2px;
+    background:repeating-linear-gradient(90deg,#CFE4F0 0 8px,transparent 8px 16px);
+    z-index:0;
+  }
+  .step{position:relative;z-index:1;padding:0 14px;text-align:center;}
+  .step-num{
+    width:76px;height:76px;margin:0 auto 22px;border-radius:50%;
+    display:grid;place-items:center;background:#fff;
+    border:1px solid #DDEBF4;box-shadow:0 10px 26px rgba(8,64,51,.08);
+    font-size:19px;font-weight:800;letter-spacing:-.02em;color:var(--navy);
+    position:relative;transition:transform .3s ease,box-shadow .3s ease;
+  }
+  .step-num::after{
+    content:"";position:absolute;inset:6px;border-radius:50%;
+    border:1px solid #E7F2F8;
+  }
+  .step:hover .step-num{transform:translateY(-4px);box-shadow:0 16px 34px rgba(2,132,199,.20);}
+  .step:nth-child(1) .step-num{color:var(--sky);}
+  .step:nth-child(2) .step-num{color:#0891B2;}
+  .step:nth-child(3) .step-num{color:#0D9488;}
+  .step:nth-child(4) .step-num{color:var(--emerald);}
+  .step h3{font-size:17.5px;font-weight:800;letter-spacing:-.03em;color:var(--navy);margin-bottom:9px;}
+  .step p{font-size:13.8px;color:var(--muted);line-height:1.7;max-width:230px;margin:0 auto;}
+
+  .process-cta{
+    margin-top:clamp(40px,5vw,60px);
+    display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+    padding:28px 32px;border-radius:20px;
+    background:linear-gradient(120deg,#EFF9FE,#EAFBF3);
+    border:1px solid #D8EEE8;
+  }
+  .process-cta .txt strong{display:block;font-size:18px;font-weight:800;color:var(--navy);letter-spacing:-.03em;}
+  .process-cta .txt span{font-size:14px;color:var(--muted);}
+  .process-cta .btns{display:flex;gap:10px;flex-wrap:wrap;}
+
+  /* ---------- Contact ---------- */
+  #contact{
+    background:
+      radial-gradient(880px 460px at 100% 0%,rgba(56,189,248,.16),transparent 62%),
+      radial-gradient(720px 420px at 0% 100%,rgba(5,150,105,.11),transparent 60%),
+      linear-gradient(168deg,#F4FBFD 0%,#F3FBF7 52%,#EDF9F4 100%);
+    color:var(--ink);
+    border-top:1px solid #E3F0EC;
+  }
+  #contact .eyebrow{color:#0369A1;}
+  #contact .s-title{color:var(--navy);}
+  #contact .s-title em{color:var(--emerald);}
+  #contact .s-desc{color:var(--muted);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:start;}
+  .c-list{display:grid;gap:12px;margin-top:34px;}
+  .c-row{
+    display:flex;align-items:center;gap:16px;
+    padding:18px 20px;border-radius:16px;
+    background:#fff;border:1px solid #E0EDE9;
+    box-shadow:0 2px 10px rgba(8,64,51,.045);
+    transition:background .25s ease,border-color .25s ease,box-shadow .25s ease,transform .25s ease;
+  }
+  .c-row:hover{background:#fff;border-color:#BDE4F2;box-shadow:0 16px 34px rgba(2,132,199,.13);transform:translateX(4px);}
+  .c-row .c-ico{
+    width:44px;height:44px;flex-shrink:0;border-radius:13px;display:grid;place-items:center;
+    background:#E8F6FE;color:#0284C7;border:1px solid #D5ECF8;
+  }
+  .c-row.kakao .c-ico{background:#FEF8D8;color:#B98A00;border-color:#F4E7A6;}
+  .c-row .c-body{min-width:0;flex:1;}
+  .c-row .c-label{display:block;font-size:11.5px;font-weight:700;letter-spacing:.06em;color:#68827A;text-transform:uppercase;margin-bottom:1px;}
+  .c-row .c-value{display:block;font-size:19px;font-weight:800;letter-spacing:-.01em;color:var(--navy);line-height:1.35;word-break:break-all;}
+  .c-row .c-value small{font-size:12.5px;font-weight:600;color:#7E978F;letter-spacing:0;margin-left:7px;}
+  .c-row .c-tail{flex-shrink:0;color:#A5BDB5;}
+  .c-row .copy-btn{
+    flex-shrink:0;display:inline-flex;align-items:center;gap:6px;
+    padding:9px 13px;border-radius:10px;border:1px solid #F0E3A4;
+    background:#FEF8D8;color:#8A6B00;font-size:12.5px;font-weight:800;cursor:pointer;
+    transition:background .2s ease,transform .15s ease;
+  }
+  .c-row .copy-btn:hover{background:#FDF1BC;}
+  .c-row .copy-btn:active{transform:scale(.96);}
+  .coverage{
+    margin-top:22px;display:flex;gap:12px;align-items:flex-start;
+    padding:18px 20px;border-radius:16px;
+    background:rgba(5,150,105,.07);border:1px solid rgba(5,150,105,.18);
+  }
+  .coverage svg{flex-shrink:0;color:#059669;margin-top:1px;}
+  .coverage strong{display:block;font-size:14px;font-weight:800;color:#065F46;margin-bottom:3px;}
+  .coverage span{font-size:13.2px;color:#567068;line-height:1.65;}
+
+  .quote-card{
+    background:#fff;color:var(--ink);border-radius:24px;
+    padding:clamp(24px,3vw,34px);box-shadow:0 26px 60px rgba(8,64,51,.13);
+    border:1px solid #E3F0EC;
+    position:relative;
+  }
+  .quote-card::before{
+    content:"";position:absolute;top:0;left:24px;right:24px;height:3px;border-radius:0 0 3px 3px;
+    background:linear-gradient(90deg,var(--sky),var(--emerald));
+  }
+  .qc-head{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
+  .qc-head .qc-ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--sky-soft);color:#0284C7;flex-shrink:0;}
+  .qc-head h3{font-size:20px;font-weight:800;letter-spacing:-.03em;color:var(--navy);line-height:1.3;}
+  .qc-head p{font-size:13px;color:var(--muted);font-weight:500;}
+  .qc-form{display:grid;gap:14px;margin-top:20px;}
+  .field label{display:block;font-size:12.5px;font-weight:800;color:#3C5A52;margin-bottom:7px;letter-spacing:-.01em;}
+  .field label .opt{color:#93ABA3;font-weight:600;margin-left:4px;}
+  .field input,.field select,.field textarea{
+    width:100%;font-family:inherit;font-size:14.5px;color:var(--ink);
+    padding:13px 14px;border-radius:12px;border:1px solid #DCEDE7;background:#F8FDFB;
+    transition:border-color .2s ease,background .2s ease,box-shadow .2s ease;
+    appearance:none;-webkit-appearance:none;
+  }
+  .field select{
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235C756E' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;
+  }
+  .field textarea{resize:vertical;min-height:86px;line-height:1.6;}
+  .field input:focus,.field select:focus,.field textarea:focus{
+    outline:none;border-color:var(--sky);background:#fff;box-shadow:0 0 0 4px rgba(2,132,199,.13);
+  }
+  .field input::placeholder,.field textarea::placeholder{color:#A2B4C1;}
+  .qc-form .btn{width:100%;padding:15px;border-radius:13px;font-size:15.5px;}
+  .qc-form .btn-ghost{background:#fff;}
+  .qc-note{font-size:11.8px;color:#6F877E;text-align:center;margin-top:2px;line-height:1.6;}
+  .qc-hint{
+    margin-top:14px;display:flex;align-items:center;gap:8px;justify-content:center;
+    font-size:12.5px;color:#6E867D;font-weight:600;flex-wrap:wrap;
+  }
+  .qc-hint a{color:var(--sky);font-weight:800;}
+  .qc-hint a:hover{text-decoration:underline;}
+
+  /* ---------- Footer ---------- */
+  .footer{background:linear-gradient(180deg,#065F46 0%,#043D2E 100%);color:#A9C9BE;padding:52px 0 34px;}
+  .footer-top{display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.10);}
+  .footer .logo-text strong{color:#fff;}
+  .footer .logo-text span{color:#7DD3FC;}
+  .footer-info{display:grid;gap:7px;font-size:13.5px;line-height:1.7;}
+  .footer-info strong{color:#D8EDE5;font-weight:700;}
+  .footer-info a:hover{color:#7DD3FC;}
+  .footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13.5px;font-weight:600;}
+  .footer-links a:hover{color:#7DD3FC;}
+  .footer-bottom{padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#86AF9F;}
+  .footer-bottom .made{display:inline-flex;align-items:center;gap:6px;}
+
+  /* ---------- Mobile fixed bar ---------- */
+  .mobile-bar{
+    position:fixed;left:0;right:0;bottom:0;z-index:70;
+    display:none;
+    padding:9px 12px calc(9px + env(safe-area-inset-bottom,0px));
+    background:rgba(255,255,255,.97);
+    backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+    border-top:1px solid #DEEEE8;
+    box-shadow:0 -8px 26px rgba(8,64,51,.09);
+  }
+  .mobile-bar .mb-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;}
+  .mb-btn{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
+    padding:9px 4px;border-radius:13px;border:1px solid transparent;background:transparent;
+    font-size:11.5px;font-weight:800;color:var(--navy);cursor:pointer;letter-spacing:-.02em;
+    transition:background .2s ease,transform .15s ease;
+  }
+  .mb-btn:active{transform:scale(.97);}
+  .mb-btn .mb-ico{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;}
+  .mb-btn.call{background:linear-gradient(135deg,#047857,#065F46);color:#fff;box-shadow:0 8px 18px rgba(6,95,70,.24);}
+  .mb-btn.call .mb-ico{background:rgba(255,255,255,.16);color:#fff;}
+  .mb-btn.kakao .mb-ico{background:#FEE500;color:#3C1E1E;}
+  .mb-btn.kakao{border-color:#E4F1EC;background:#F7FDFA;}
+  .mb-btn.sms .mb-ico{background:var(--sky-soft);color:#0284C7;}
+  .mb-btn.sms{border-color:#E4F1EC;background:#F7FDFA;}
+
+  /* ---------- Toast ---------- */
+  .toast{
+    position:fixed;left:50%;bottom:34px;z-index:200;
+    transform:translate(-50%,18px);
+    display:flex;align-items:center;gap:10px;
+    padding:12px 18px;border-radius:14px;
+    background:linear-gradient(135deg,rgba(6,95,70,.98),rgba(4,61,46,.98));color:#fff;
+    font-size:13.5px;font-weight:700;letter-spacing:-.01em;line-height:1.5;
+    box-shadow:0 18px 40px rgba(6,48,38,.34);
+    opacity:0;visibility:hidden;pointer-events:none;
+    transition:opacity .25s ease,transform .25s ease,visibility .25s;
+    max-width:min(360px,calc(100vw - 40px));
+  }
+  .toast.is-show{opacity:1;visibility:visible;transform:translate(-50%,0);}
+  .toast svg{color:#6EE7B7;flex-shrink:0;}
+  .toast .t-err{display:none;}
+  .toast.is-error svg{color:#FDE68A;}
+  .toast.is-error .t-ok{display:none;}
+  .toast.is-error .t-err{display:block;}
+
+  /* ---------- Reveal ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);}
+  .reveal.is-in{opacity:1;transform:none;}
+  .reveal.d1{transition-delay:.08s;}
+  .reveal.d2{transition-delay:.16s;}
+  .reveal.d3{transition-delay:.24s;}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:1080px){
+    .nav{gap:24px;}
+    .nav-tel{display:none;}
+    .hero .wrap{grid-template-columns:1fr .92fr;gap:36px;}
+    .float-chip{display:none;}
+  }
+  @media (max-width:960px){
+    :root{--header-h:70px;}
+    .header.is-scrolled{height:var(--header-h);}
+    .nav{display:none;}
+    .nav-cta .btn-quote{display:none;}
+    .hamburger{display:block;}
+    .hero .wrap{grid-template-columns:1fr;gap:34px;}
+    .hero-sub{max-width:none;}
+    .hero-visual{max-width:560px;margin:0 auto;width:100%;}
+    .hero-frame{aspect-ratio:4/5;}
+    .hero-frame img{object-position:50% 22%;}
+    .strip .wrap{grid-template-columns:repeat(2,1fr);}
+    .strip-item{padding:20px 14px;}
+    .strip-item:nth-child(2){border-right:0;}
+    .strip-item:nth-child(1),.strip-item:nth-child(2){border-bottom:1px solid #EBF4F0;}
+    .service-grid{grid-template-columns:1fr;}
+    .s-card > p{min-height:0;}
+    .target-grid{grid-template-columns:repeat(2,1fr);}
+    .process-grid{grid-template-columns:repeat(2,1fr);row-gap:38px;}
+    .process-grid::before{display:none;}
+    .contact-grid{grid-template-columns:1fr;}
+    .mobile-bar{display:block;}
+    body{padding-bottom:78px;}
+    .toast{bottom:calc(86px + env(safe-area-inset-bottom,0px));}
+  }
+  @media (max-width:600px){
+    .wrap{padding:0 18px;}
+    .hero{padding-top:calc(var(--header-h) + 30px);}
+    .hero-actions{flex-direction:column;align-items:stretch;}
+    .hero-actions .btn{justify-content:center;}
+    .hero-meta{gap:9px 16px;}
+    .hero-meta li{font-size:12.5px;}
+    .hero-glass{padding:12px 13px;gap:10px;left:12px;right:12px;bottom:12px;}
+    .hero-glass strong{font-size:14.5px;}
+    .target-grid{grid-template-columns:1fr;}
+    .process-grid{grid-template-columns:1fr;row-gap:28px;}
+    .step{text-align:left;display:grid;grid-template-columns:56px 1fr;column-gap:16px;align-items:start;padding:0;}
+    .step-num{width:56px;height:56px;margin:0;font-size:16px;grid-row:span 2;}
+    .step h3{margin-bottom:4px;font-size:16.5px;}
+    .step p{max-width:none;font-size:13.5px;}
+    .process-cta{padding:22px 20px;}
+    .process-cta .btns{width:100%;}
+    .process-cta .btns .btn{flex:1;}
+    .c-row{padding:15px 15px;gap:12px;}
+    .c-row .c-value{font-size:16px;}
+    .c-row .c-value small{display:block;margin-left:0;}
+    .c-row .copy-btn{padding:8px 10px;font-size:11.5px;}
+    .footer-top{flex-direction:column;gap:24px;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;}
+    .reveal{opacity:1;transform:none;}
+  }
+  @media print{
+    .header,.mobile-bar,.toast{display:none !important;}
+    body{padding-bottom:0;}
+  }
+</style>
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="wrap">
+    <a class="logo" href="#hero" aria-label="이노크린 홈으로">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="lg1" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#0284C7"/><stop offset="1" stop-color="#059669"/>
+          </linearGradient>
+        </defs>
+        <rect width="48" height="48" rx="13" fill="#043D2E"/>
+        <path d="M24 9.5l11 4.1v9.2c0 6.9-4.6 11.4-11 13.7-6.4-2.3-11-6.8-11-13.7v-9.2l11-4.1z" fill="url(#lg1)"/>
+        <path d="M18.6 23.9l3.8 3.8 7.4-7.6" stroke="#043D2E" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo-text">
+        <strong>이노크린</strong>
+        <span>inoclean</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="주요 메뉴">
+      <a class="nav-link" href="#service">서비스 안내</a>
+      <a class="nav-link" href="#target">시공 대상</a>
+      <a class="nav-link" href="#process">진행 절차</a>
+      <a class="nav-link" href="#contact">연락처</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="nav-tel" href="tel:02-6061-4444" aria-label="대표 전화 02-6061-4444로 전화하기">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        02-6061-4444
+      </a>
+      <a class="btn btn-primary btn-sm btn-quote" href="#contact">
+        무료 견적 문의
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button class="hamburger" id="hamburger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a class="m-link" href="#service">서비스 안내
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </a>
+  <a class="m-link" href="#target">시공 대상
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </a>
+  <a class="m-link" href="#process">진행 절차
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </a>
+  <a class="m-link" href="#contact">연락처 · 견적 문의
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </a>
+  <div class="m-actions">
+    <a class="btn btn-navy" href="tel:02-6061-4444">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      전화 상담
+    </a>
+    <button class="btn btn-kakao js-copy-kakao" type="button" data-kakao="dmshhh7_">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.9 3 2.8 6.2 2.8 10.2c0 2.6 1.7 4.9 4.3 6.2l-1.1 4c-.1.4.3.7.6.5l4.7-3.1c.2 0 .4.1.7.1 5.1 0 9.2-3.2 9.2-7.2S17.1 3 12 3z"/></svg>
+      카톡 ID 복사
+    </button>
+  </div>
+</div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="badge reveal">
+          <span class="dot">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          </span>
+          <b>수도권 전 지역</b> 방역·소독 전문
+        </span>
+
+        <h1 class="reveal d1">
+          보이지 않는 위험까지<br>
+          <span class="grad">완벽하게</span>
+        </h1>
+
+        <p class="hero-sub reveal d1">
+          수도권 방역·소독·해충방제 전문 <strong>이노크린</strong>.<br>
+          원인을 진단하고, 공간에 맞는 방제를 설계합니다.
+        </p>
+
+        <div class="hero-actions reveal d2">
+          <a class="btn btn-primary" href="tel:02-6061-4444">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            전화 상담 02-6061-4444
+          </a>
+          <button class="btn btn-kakao js-copy-kakao" type="button" data-kakao="dmshhh7_">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.9 3 2.8 6.2 2.8 10.2c0 2.6 1.7 4.9 4.3 6.2l-1.1 4c-.1.4.3.7.6.5l4.7-3.1c.2 0 .4.1.7.1 5.1 0 9.2-3.2 9.2-7.2S17.1 3 12 3z"/></svg>
+            카톡 문의
+          </button>
+        </div>
+
+        <ul class="hero-meta reveal d3">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            무료 상담 · 현장 진단
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            맞춤 방제 계획
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            사후 관리 · 정기 점검
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal d2">
+        <div class="float-chip top"><span class="pulse"></span> 서울 · 경기 · 인천 출동</div>
+        <div class="hero-frame">
+          <picture>
+            <source srcset="hero.webp" type="image/webp">
+            <img src="hero.png" alt="이노크린 방역 전문가가 주거 공간에서 연무 소독 장비로 방역 시공을 진행하는 모습" width="1024" height="1536" fetchpriority="high">
+          </picture>
+          <div class="hero-glass">
+            <span class="ico">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </span>
+            <p>현장 진단부터 사후 관리까지
+              <strong>이노크린이 직접 책임집니다</strong>
+            </p>
+            <a href="tel:02-6061-4444" aria-label="전화 상담 바로 연결">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="strip">
+    <div class="wrap">
+      <div class="strip-item">
+        <span class="ic">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        <div><strong>수도권 전 지역</strong><span>서울 · 경기 · 인천</span></div>
+      </div>
+      <div class="strip-item">
+        <span class="ic">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </span>
+        <div><strong>무료 상담 · 견적</strong><span>현장 진단 후 안내</span></div>
+      </div>
+      <div class="strip-item">
+        <span class="ic">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+        </span>
+        <div><strong>맞춤 방제 설계</strong><span>공간별 원인 진단</span></div>
+      </div>
+      <div class="strip-item">
+        <span class="ic">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 3v6h6"/><path d="M12 8v4l3 2"/></svg>
+        </span>
+        <div><strong>정기 관리 프로그램</strong><span>월별 · 분기별 방문</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section" id="service">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="reveal">
+          <span class="eyebrow">Core Service</span>
+          <h2 class="s-title">상황에 맞는 방제,<br><em>원인부터</em> 다릅니다</h2>
+        </div>
+        <p class="s-desc reveal d1" style="margin-top:0;">
+          같은 해충도 공간과 발생 원인에 따라 처방이 달라야 합니다.
+          이노크린은 진단 → 설계 → 시공 → 사후 관리를 한 흐름으로 진행합니다.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="s-card reveal">
+          <span class="s-ico">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <ellipse cx="12" cy="13.5" rx="4.2" ry="5.6"/>
+              <path d="M12 7.9V5.2M9.6 6.3L8.2 4.1M14.4 6.3l1.4-2.2"/>
+              <path d="M7.8 11.5H4.4M7.8 15.5H4.6M16.2 11.5h3.4M16.2 15.5h3.2"/>
+              <path d="M11.2 19.1l-1.6 2.4M12.8 19.1l1.6 2.4"/>
+            </svg>
+          </span>
+          <h3>해충방제</h3>
+          <p>바퀴벌레·개미·쥐·진드기 등 생활 해충을 발생 원인부터 잡습니다. 서식지와 이동 경로를 확인한 뒤 맞는 약제와 시공 방법을 선택합니다.</p>
+          <ul class="s-list">
+            <li>바퀴벌레 · 개미 · 쥐 · 진드기 등</li>
+            <li>발생 원인 진단 후 맞춤 약제 선택</li>
+            <li>재발 방지를 위한 서식지 · 침입 경로 차단</li>
+          </ul>
+        </article>
+
+        <article class="s-card reveal d1">
+          <span class="s-ico">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2.8s5.2 5.6 5.2 10.1a5.2 5.2 0 0 1-10.4 0C6.8 8.4 12 2.8 12 2.8z"/>
+              <path d="M9.7 13.2a2.4 2.4 0 0 0 2.4 2.4"/>
+              <path d="M18.6 3.2l.6 1.6 1.6.6-1.6.6-.6 1.6-.6-1.6-1.6-.6 1.6-.6z"/>
+            </svg>
+          </span>
+          <h3>공간 살균 · 방역 소독</h3>
+          <p>주거 공간부터 식당 주방, 사무실까지. 분무·연무 방식으로 구석까지 소독하고, 공간 특성에 맞는 약제와 농도를 적용합니다.</p>
+          <ul class="s-list">
+            <li>가정 · 사무실 · 매장 · 주방 공간 소독</li>
+            <li>분무 · 연무 소독으로 사각지대까지</li>
+            <li>공간에 맞춘 약제 · 농도 조절</li>
+          </ul>
+        </article>
+
+        <article class="s-card reveal d2">
+          <span class="s-ico">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4.5" width="18" height="16" rx="2.5"/>
+              <path d="M3 9.2h18M8 2.8v3.4M16 2.8v3.4"/>
+              <path d="M7.6 13.2l1.5 1.5 2.6-2.8"/>
+              <path d="M14.4 13.6h2.6M14.4 17h2.6"/>
+            </svg>
+          </span>
+          <h3>정기 관리 프로그램</h3>
+          <p>한 번의 방제로 끝내지 않습니다. 월별·분기별 정기 방문으로 상태를 점검하고, 필요한 시점에 추가 방제를 진행합니다.</p>
+          <ul class="s-list">
+            <li>월별 · 분기별 정기 방문 관리</li>
+            <li>주기별 모니터링과 추가 방제</li>
+            <li>관리 이력 기록 · 상담 대응</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARGETS -->
+  <section class="section" id="target">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="reveal">
+          <span class="eyebrow">Where We Work</span>
+          <h2 class="s-title">어떤 공간이든,<br>그 공간에 맞는 <em>방제</em></h2>
+        </div>
+        <p class="s-desc reveal d1" style="margin-top:0;">
+          가정부터 사업장까지, 공간의 용도와 이용 시간을 고려해 시공합니다.
+          영업에 지장이 없도록 시간대를 맞춰 방문합니다.
+        </p>
+      </div>
+
+      <div class="target-grid">
+        <article class="t-card reveal">
+          <span class="num">01</span>
+          <span class="t-ico">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/></svg>
+          </span>
+          <h3>가정집 · 아파트</h3>
+          <p>주거 공간의 해충과 곰팡이·세균까지. 생활에 불편이 없도록 안전을 고려해 시공합니다.</p>
+        </article>
+
+        <article class="t-card reveal d1">
+          <span class="num">02</span>
+          <span class="t-ico">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8.5h12v6a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/><path d="M16 10h2.2a2.3 2.3 0 0 1 0 4.6H16"/><path d="M7 5.5c0-1 1-1.2 1-2.2M11 5.5c0-1 1-1.2 1-2.2"/><path d="M3 21h16"/></svg>
+          </span>
+          <h3>식당 · 카페</h3>
+          <p>주방과 홀, 창고까지. 위생 점검에 대비하고 영업 시간 이후나 휴무일에 맞춰 방문합니다.</p>
+        </article>
+
+        <article class="t-card reveal d2">
+          <span class="num">03</span>
+          <span class="t-ico">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2.5"/><path d="M8.5 3.5v17M3.5 9.5h17"/><path d="M12.5 13.5h4M12.5 16.5h4"/></svg>
+          </span>
+          <h3>사무실 · 상가</h3>
+          <p>근무 환경의 위생 관리와 해충 차단. 층별·구역별로 계획을 세워 정기 관리합니다.</p>
+        </article>
+
+        <article class="t-card reveal d3">
+          <span class="num">04</span>
+          <span class="t-ico">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l9 3.4v5.1c0 4.9-3.7 8.2-9 9.7-5.3-1.5-9-4.8-9-9.7V6.6z"/><path d="M9 12.2l2 2 4-4.2"/></svg>
+          </span>
+          <h3>학원 · 어린이집 · 병원</h3>
+          <p>이용자가 많은 공간일수록 꼼꼼한 위생 관리가 필요합니다. 안전을 우선해 시공합니다.</p>
+        </article>
+      </div>
+
+      <div class="target-note reveal">
+        <span class="pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          서울 · 경기 · 인천
+        </span>
+        <span>그 외 공장 · 창고 · 다중이용시설 등도 상담 가능합니다.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="wrap">
+      <div class="sec-head" style="justify-content:center;text-align:center;margin-bottom:0;">
+        <div class="reveal" style="max-width:720px;">
+          <span class="eyebrow" style="justify-content:center;">How We Work</span>
+          <h2 class="s-title">상담부터 사후 관리까지,<br><em>네 단계</em>로 진행합니다</h2>
+          <p class="s-desc" style="margin-left:auto;margin-right:auto;">
+            현장 상황을 먼저 확인하고, 필요한 만큼만 시공합니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="process-grid">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3>무료 상담 · 현장 진단</h3>
+          <p>전화·카톡으로 상황을 듣고, 필요하면 현장을 직접 확인합니다.</p>
+        </div>
+        <div class="step reveal d1">
+          <div class="step-num">02</div>
+          <h3>맞춤 방제 계획</h3>
+          <p>해충 종류와 공간 구조에 맞춰 약제와 시공 방법을 정합니다.</p>
+        </div>
+        <div class="step reveal d2">
+          <div class="step-num">03</div>
+          <h3>전문 약제 · 장비 시공</h3>
+          <p>검증된 약제와 장비로 구석까지 꼼꼼하게 시공합니다.</p>
+        </div>
+        <div class="step reveal d3">
+          <div class="step-num">04</div>
+          <h3>사후 관리 · 정기 점검</h3>
+          <p>시공 후 상태를 확인하고, 필요하면 추가 방제와 정기 관리를 진행합니다.</p>
+        </div>
+      </div>
+
+      <div class="process-cta reveal">
+        <div class="txt">
+          <strong>지금 상황, 먼저 물어보세요.</strong>
+          <span>상담과 현장 진단은 무료입니다. 수도권 전 지역 방문 가능합니다.</span>
+        </div>
+        <div class="btns">
+          <a class="btn btn-navy" href="tel:02-6061-4444">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            전화 상담
+          </a>
+          <a class="btn btn-ghost" href="#contact">견적 문의하기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <span class="eyebrow reveal">Contact</span>
+          <h2 class="s-title reveal d1">무료 견적 문의<br><em>편하게</em> 연락 주세요</h2>
+          <p class="s-desc reveal d1">
+            공간과 상황을 알려주시면 필요한 방제와 비용을 안내해 드립니다.
+            전화가 어려우시면 카카오톡 아이디를 복사해 메시지를 보내주세요.
+          </p>
+
+          <div class="c-list">
+            <a class="c-row reveal" href="tel:02-6061-4444">
+              <span class="c-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              </span>
+              <span class="c-body">
+                <span class="c-label">대표 전화</span>
+                <span class="c-value">02-6061-4444</span>
+              </span>
+              <span class="c-tail">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+              </span>
+            </a>
+
+            <a class="c-row reveal d1" href="tel:010-4080-7004">
+              <span class="c-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+              </span>
+              <span class="c-body">
+                <span class="c-label">휴대전화</span>
+                <span class="c-value">010-4080-7004</span>
+              </span>
+              <span class="c-tail">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+              </span>
+            </a>
+
+            <div class="c-row kakao reveal d2">
+              <span class="c-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.9 3 2.8 6.2 2.8 10.2c0 2.6 1.7 4.9 4.3 6.2l-1.1 4c-.1.4.3.7.6.5l4.7-3.1c.2 0 .4.1.7.1 5.1 0 9.2-3.2 9.2-7.2S17.1 3 12 3z"/></svg>
+              </span>
+              <span class="c-body">
+                <span class="c-label">카카오톡 아이디</span>
+                <span class="c-value">dmshhh7_</span>
+              </span>
+              <button class="copy-btn js-copy-kakao" type="button" data-kakao="dmshhh7_" aria-label="카카오톡 아이디 dmshhh7_ 복사">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2.4"/><path d="M5.5 15H4.6A1.6 1.6 0 0 1 3 13.4V4.6A1.6 1.6 0 0 1 4.6 3h8.8A1.6 1.6 0 0 1 15 4.6v.9"/></svg>
+                복사
+              </button>
+            </div>
+          </div>
+
+          <div class="coverage reveal d2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <strong>서울 · 경기 · 인천 수도권 전 지역 출동</strong>
+              <span>방문 일정과 시간은 상담 시 공간 상황에 맞춰 조율해 드립니다. 영업장은 영업 종료 후 방문도 가능합니다.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-card reveal d1">
+          <div class="qc-head">
+            <span class="qc-ico">
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 8.9 8.9 0 0 1-3.8-.9L3 21l1.9-5.5a8.3 8.3 0 0 1-.9-3.9A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5z"/><path d="M8.5 11.5h7M8.5 8.5h4"/></svg>
+            </span>
+            <div>
+              <h3>간단 견적 문의</h3>
+              <p>내용을 적고 문자로 바로 보내보세요.</p>
+            </div>
+          </div>
+
+          <form class="qc-form" id="quoteForm" novalidate>
+            <div class="field">
+              <label for="qType">시공 공간</label>
+              <select id="qType" name="type">
+                <option value="가정집·아파트">가정집 · 아파트</option>
+                <option value="식당·카페">식당 · 카페</option>
+                <option value="사무실·상가">사무실 · 상가</option>
+                <option value="학원·어린이집·병원">학원 · 어린이집 · 병원</option>
+                <option value="기타">기타 공간</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="qArea">지역 <span class="opt">선택</span></label>
+              <input id="qArea" name="area" type="text" placeholder="예) 서울 강서구, 인천 부평구" autocomplete="address-level1">
+            </div>
+            <div class="field">
+              <label for="qMsg">문의 내용 <span class="opt">선택</span></label>
+              <textarea id="qMsg" name="msg" placeholder="예) 주방에 바퀴벌레가 보여요. 평수는 24평이고 방문 가능한 시간대는 평일 저녁입니다."></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 3.5L11 14"/><path d="M21.5 3.5l-6.8 17.6-3.7-7.1-7.1-3.7z"/></svg>
+              문자로 견적 문의
+            </button>
+            <a class="btn btn-ghost" href="tel:02-6061-4444">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              전화로 바로 문의
+            </a>
+            <p class="qc-note">문자 앱이 열리며, 내용을 확인한 뒤 직접 보내실 수 있습니다. (PC에서는 문자 앱이 열리지 않을 수 있습니다)</p>
+          </form>
+
+          <div class="qc-hint">
+            <span>카카오톡이 편하시다면</span>
+            <button class="js-copy-kakao" type="button" data-kakao="dmshhh7_" style="border:0;background:none;padding:0;font:inherit;font-weight:800;color:#0284C7;cursor:pointer;">ID dmshhh7_ 복사</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="logo" href="#hero" aria-label="이노크린 홈으로" style="margin-bottom:16px;">
+          <svg class="logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect width="48" height="48" rx="13" fill="#032F23"/>
+            <path d="M24 9.5l11 4.1v9.2c0 6.9-4.6 11.4-11 13.7-6.4-2.3-11-6.8-11-13.7v-9.2l11-4.1z" fill="url(#lg1)"/>
+            <path d="M18.6 23.9l3.8 3.8 7.4-7.6" stroke="#032F23" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo-text">
+            <strong>이노크린</strong>
+            <span>inoclean</span>
+          </span>
+        </a>
+        <div class="footer-info" style="margin-top:16px;">
+          <span>방역 · 살균 소독 · 해충방제 전문</span>
+          <span>서울 · 경기 · 인천 수도권 전 지역</span>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <span><strong>대표 전화</strong> <a href="tel:02-6061-4444">02-6061-4444</a></span>
+        <span><strong>휴대전화</strong> <a href="tel:010-4080-7004">010-4080-7004</a></span>
+        <span><strong>카카오톡</strong> dmshhh7_</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#service">서비스 안내</a>
+        <a href="#target">시공 대상</a>
+        <a href="#process">진행 절차</a>
+        <a href="#contact">견적 문의</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> 이노크린 inoclean. All rights reserved.</span>
+      <span class="made">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        보이지 않는 위험까지 완벽하게
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE FIXED BAR -->
+<div class="mobile-bar" role="navigation" aria-label="빠른 연락">
+  <div class="mb-grid">
+    <a class="mb-btn call" href="tel:02-6061-4444">
+      <span class="mb-ico">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      </span>
+      전화 걸기
+    </a>
+    <button class="mb-btn kakao js-copy-kakao" type="button" data-kakao="dmshhh7_">
+      <span class="mb-ico">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.9 3 2.8 6.2 2.8 10.2c0 2.6 1.7 4.9 4.3 6.2l-1.1 4c-.1.4.3.7.6.5l4.7-3.1c.2 0 .4.1.7.1 5.1 0 9.2-3.2 9.2-7.2S17.1 3 12 3z"/></svg>
+      </span>
+      카톡 ID 복사
+    </button>
+    <a class="mb-btn sms" href="sms:010-4080-7004" id="mbSms">
+      <span class="mb-ico">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 8.9 8.9 0 0 1-3.8-.9L3 21l1.9-5.5a8.3 8.3 0 0 1-.9-3.9A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5z"/></svg>
+      </span>
+      문자 문의
+    </a>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <svg class="t-ok" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+  <svg class="t-err" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5M12 16.2v.3"/></svg>
+  <span id="toastText">카카오톡 아이디가 복사되었습니다</span>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var KAKAO_ID = "dmshhh7_";
+  var PHONE = "010-4080-7004";
+
+  /* ---------- Header scroll state ---------- */
+  var header = document.getElementById("header");
+  function onScroll() {
+    if (!header) return;
+    if (window.scrollY > 12) {
+      header.classList.add("is-scrolled");
+    } else {
+      header.classList.remove("is-scrolled");
+    }
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- Mobile nav ---------- */
+  var burger = document.getElementById("hamburger");
+  var mobileNav = document.getElementById("mobileNav");
+
+  function closeNav() {
+    if (!burger || !mobileNav) return;
+    burger.classList.remove("is-open");
+    mobileNav.classList.remove("is-open");
+    burger.setAttribute("aria-expanded", "false");
+    burger.setAttribute("aria-label", "메뉴 열기");
+  }
+
+  if (burger && mobileNav) {
+    burger.addEventListener("click", function () {
+      var isOpen = burger.classList.toggle("is-open");
+      mobileNav.classList.toggle("is-open", isOpen);
+      burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      burger.setAttribute("aria-label", isOpen ? "메뉴 닫기" : "메뉴 열기");
+    });
+
+    mobileNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeNav);
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeNav();
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 960) closeNav();
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById("toast");
+  var toastText = document.getElementById("toastText");
+  var toastTimer = null;
+
+  function showToast(message, isError) {
+    if (!toast || !toastText) return;
+    toastText.textContent = message;
+    toast.classList.toggle("is-error", !!isError);
+    toast.classList.add("is-show");
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toast.classList.remove("is-show");
+    }, 2600);
+  }
+
+  /* ---------- Copy helper ---------- */
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.top = "-1000px";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    ta.setSelectionRange(0, text.length);
+    var ok = false;
+    try {
+      ok = document.execCommand("copy");
+    } catch (err) {
+      ok = false;
+    }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  function copyText(text, successMessage, failMessage) {
+    function done(ok) {
+      showToast(ok ? successMessage : failMessage, !ok);
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () {
+        done(true);
+      }).catch(function () {
+        done(fallbackCopy(text));
+      });
+    } else {
+      done(fallbackCopy(text));
+    }
+  }
+
+  document.querySelectorAll(".js-copy-kakao").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var id = btn.getAttribute("data-kakao") || KAKAO_ID;
+      if (btn.closest && btn.closest("#mobileNav")) closeNav();
+      copyText(
+        id,
+        "카카오톡 ID " + id + " 가 복사되었습니다",
+        "복사가 안 됐어요. 카카오톡에서 직접 검색해 주세요"
+      );
+    });
+  });
+
+  /* ---------- Footer year ---------- */
+  var yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  /* ---------- Reveal on scroll ---------- */
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    revealEls.forEach(function (el) { el.classList.add("is-in"); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    revealEls.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---------- Quote form -> SMS ---------- */
+  var form = document.getElementById("quoteForm");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var typeEl = document.getElementById("qType");
+      var areaEl = document.getElementById("qArea");
+      var msgEl = document.getElementById("qMsg");
+
+      var type = typeEl ? typeEl.value : "";
+      var area = areaEl ? areaEl.value.trim() : "";
+      var msg = msgEl ? msgEl.value.trim() : "";
+
+      var lines = ["[이노크린 견적 문의]", "· 공간: " + type];
+      if (area) lines.push("· 지역: " + area);
+      if (msg) lines.push("· 내용: " + msg);
+      lines.push("", "연락처를 남겨주시면 바로 연락드리겠습니다.");
+      var body = lines.join("\n");
+
+      var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      var href = "sms:" + PHONE.replace(/-/g, "") + (isIOS ? "&body=" : "?body=") + encodeURIComponent(body);
+
+      showToast("문자 앱으로 이동합니다");
+      window.location.href = href;
+    });
+  }
+
+  /* ---------- SMS bar with prefilled text ---------- */
+  var mbSms = document.getElementById("mbSms");
+  if (mbSms) {
+    var isIOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    var defaultBody = "[이노크린 견적 문의] 공간과 상황을 알려주시면 바로 안내드리겠습니다.";
+    mbSms.setAttribute(
+      "href",
+      "sms:" + PHONE.replace(/-/g, "") + (isIOSDevice ? "&body=" : "?body=") + encodeURIComponent(defaultBody)
+    );
+  }
+
+  /* ---------- Smooth anchor offset (fallback for older browsers) ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener("click", function (e) {
+      var id = anchor.getAttribute("href");
+      if (!id || id === "#") return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      var headerH = header ? header.offsetHeight : 78;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - headerH - 10;
+      window.scrollTo({ top: top < 0 ? 0 : top, behavior: reduceMotion ? "auto" : "smooth" });
+      if (history.replaceState) history.replaceState(null, "", id);
+    });
+  });
+})();
+</script>
+</body>
+</html>
