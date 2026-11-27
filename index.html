@@ -504,7 +504,8 @@
   .qc-head p{font-size:13px;color:var(--muted);font-weight:500;}
   .qc-form{display:grid;gap:14px;margin-top:20px;}
   .field label{display:block;font-size:12.5px;font-weight:800;color:#3C5A52;margin-bottom:7px;letter-spacing:-.01em;}
-  .field label .opt{color:#93ABA3;font-weight:600;margin-left:4px;}
+  .field label .req{display:inline-block;margin-left:5px;padding:1px 6px;border-radius:999px;background:#FDECEC;color:#D1493F;font-size:10.5px;font-weight:800;letter-spacing:0;vertical-align:1px;}
+  .field .is-invalid,.field.is-invalid input,.field.is-invalid select,.field.is-invalid textarea{border-color:#EE8F87;background:#FFF7F6;}
   .field input,.field select,.field textarea{
     width:100%;font-family:inherit;font-size:14.5px;color:var(--ink);
     padding:13px 14px;border-radius:12px;border:1px solid #DCEDE7;background:#F8FDFB;
@@ -1095,8 +1096,9 @@
 
           <form class="qc-form" id="quoteForm" novalidate>
             <div class="field">
-              <label for="qType">시공 공간</label>
-              <select id="qType" name="type">
+              <label for="qType">시공 공간 <span class="req">필수</span></label>
+              <select id="qType" name="type" required>
+                <option value="" disabled selected>공간을 선택해 주세요</option>
                 <option value="가정집·아파트">가정집 · 아파트</option>
                 <option value="식당·카페">식당 · 카페</option>
                 <option value="사무실·상가">사무실 · 상가</option>
@@ -1105,12 +1107,16 @@
               </select>
             </div>
             <div class="field">
-              <label for="qArea">지역 <span class="opt">선택</span></label>
-              <input id="qArea" name="area" type="text" placeholder="예) 서울 강서구, 인천 부평구" autocomplete="address-level1">
+              <label for="qSize">면적 <span class="req">필수</span></label>
+              <input id="qSize" name="size" type="text" placeholder="예) 24평 / 약 80㎡" required>
             </div>
             <div class="field">
-              <label for="qMsg">문의 내용 <span class="opt">선택</span></label>
-              <textarea id="qMsg" name="msg" placeholder="예) 주방에 바퀴벌레가 보여요. 평수는 24평이고 방문 가능한 시간대는 평일 저녁입니다."></textarea>
+              <label for="qArea">지역 <span class="req">필수</span></label>
+              <input id="qArea" name="area" type="text" placeholder="예) 서울 강서구, 인천 부평구" autocomplete="address-level1" required>
+            </div>
+            <div class="field">
+              <label for="qMsg">문의 내용 <span class="req">필수</span></label>
+              <textarea id="qMsg" name="msg" placeholder="예) 주방에 바퀴벌레가 보여요. 방문 가능한 시간대는 평일 저녁입니다." required></textarea>
             </div>
             <button class="btn btn-primary" type="submit">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 3.5L11 14"/><path d="M21.5 3.5l-6.8 17.6-3.7-7.1-7.1-3.7z"/></svg>
@@ -1351,20 +1357,57 @@
   /* ---------- Quote form -> SMS ---------- */
   var form = document.getElementById("quoteForm");
   if (form) {
+    var qFields = [
+      { el: document.getElementById("qType"), label: "시공 공간" },
+      { el: document.getElementById("qSize"), label: "면적" },
+      { el: document.getElementById("qArea"), label: "지역" },
+      { el: document.getElementById("qMsg"), label: "문의 내용" }
+    ];
+
+    qFields.forEach(function (f) {
+      if (!f.el) return;
+      var clear = function () {
+        f.el.classList.remove("is-invalid");
+        f.el.removeAttribute("aria-invalid");
+      };
+      f.el.addEventListener("input", clear);
+      f.el.addEventListener("change", clear);
+    });
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var typeEl = document.getElementById("qType");
-      var areaEl = document.getElementById("qArea");
-      var msgEl = document.getElementById("qMsg");
 
-      var type = typeEl ? typeEl.value : "";
-      var area = areaEl ? areaEl.value.trim() : "";
-      var msg = msgEl ? msgEl.value.trim() : "";
+      var firstMissing = null;
+      qFields.forEach(function (f) {
+        if (!f.el) return;
+        var empty = !String(f.el.value || "").replace(/\s/g, "");
+        f.el.classList.toggle("is-invalid", empty);
+        if (empty) {
+          f.el.setAttribute("aria-invalid", "true");
+          if (!firstMissing) firstMissing = f;
+        } else {
+          f.el.removeAttribute("aria-invalid");
+        }
+      });
 
-      var lines = ["[이노크린 견적 문의]", "· 공간: " + type];
-      if (area) lines.push("· 지역: " + area);
-      if (msg) lines.push("· 내용: " + msg);
-      lines.push("", "연락처를 남겨주시면 바로 연락드리겠습니다.");
+      if (firstMissing) {
+        showToast(firstMissing.label + " 항목을 입력해 주세요", true);
+        firstMissing.el.focus();
+        return;
+      }
+
+      var type = qFields[0].el.value;
+      var size = qFields[1].el.value.trim();
+      var area = qFields[2].el.value.trim();
+      var msg = qFields[3].el.value.trim();
+
+      var lines = [
+        "[이노크린 견적 문의]",
+        "· 공간: " + type,
+        "· 면적: " + size,
+        "· 지역: " + area,
+        "· 내용: " + msg
+      ];
       var body = lines.join("\n");
 
       var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
